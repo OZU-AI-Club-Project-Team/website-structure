@@ -68,7 +68,7 @@ model TeamMember {
   github        String?
   linkedin      String?
   extraLinks    String[]
-  applicationId Int?
+  applicationId Int?       @unique
   createdAt     DateTime   @default(now())
   updatedAt     DateTime   @updatedAt
   deletedAt     DateTime?
